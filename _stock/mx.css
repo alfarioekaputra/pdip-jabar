@@ -1,0 +1,199 @@
+/*** NON CSS STANDARD ***/
+#tp_6{
+	background-image:-moz-linear-gradient(top,#E33802,#A80802);
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#E33802),to(#A80802));
+	text-shadow:1px 1px 1px #000;
+}
+#tp_5{ /** MAIN CONTENT **/
+	min-height:400px;
+}
+.pagination a{
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+#back_to_top, #back_to_top:visited{
+	text-shadow:1px 1px 1px #000;
+
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	
+  background-image:-moz-linear-gradient(top,#E33802,#A80802);
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#E33802),to(#A80802));
+}
+#back_to_top:hover{
+	background-image:-moz-linear-gradient(top,#FD4A0F,#A80802);
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#FD4A0F),to(#A80802));
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#FD4A0F,endColorStr=#A80802);
+	text-decoration:none;
+}
+*:focus {
+	outline: none !important;
+}
+::-moz-focus-inner{
+	border:0;
+}
+.button{
+	cursor:pointer;
+	background-image:-moz-linear-gradient(top,#f5f5f5,#dddddd);
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#dddddd));
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#f5f5f5,endColorStr=#dddddd);
+}
+.button:hover{
+	cursor:pointer;
+	background-image:-moz-linear-gradient(top,#f5f5f5,#eeeeee);
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#eeeeee));
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#f5f5f5,endColorStr=#eeeeee);
+}
+.button:active{
+	cursor:pointer;
+	background-image:-moz-linear-gradient(top,#eeeeee,#f5f5f5);
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#eeeeee),to(#f5f5f5));
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#eeeeee,endColorStr=#f5f5f5);
+}
+.inputbox, .selectbox, .button{
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #ccc;
+}
+.inputbox:hover, .selectbox:hover, .button:hover{
+	border-color:#ada;
+}
+.inputbox:focus, .selectbox:active, .button:active{
+	border-color:#aaa !important;
+}
+.newsview_image_nofloat img,
+.newsview_image img{
+	-moz-box-shadow			:0 0 3px #aaa;
+	-webkit-box-shadow	:0 0 3px #aaa;
+	box-shadow					:0 0 3px #aaa;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+.home_bottom{
+	background-image:-moz-linear-gradient(top,#f5f5f5,#dddddd) !important;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#dddddd)) !important;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	
+	-moz-box-shadow			:0 0 2px #666;
+	-webkit-box-shadow	:0 0 2px #666;
+	box-shadow					:0 0 2px #666;
+}
+.newslist_small li a span{
+	background:rgba(20,20,20,0.8);
+	text-shadow:1px 1px 1px #000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	-moz-box-shadow			:2px 2px 2px #444;
+	-webkit-box-shadow	:2px 2px 2px #444;
+	box-shadow					:2px 2px 2px #444;
+}
+#tp_2 form{
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+#tp_2 form input.button{
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+#tp_3 a{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	text-shadow: 1px 1px 1px #630301;
+}
+#tp_3 a:hover{
+	text-shadow: -1px -1px 1px #630301;
+}
+#tp_3 a.actived{ /** MAIN MENU ITEM ACTIVED **/
+	text-shadow: 1px 1px 1px #000 !important;
+	background-image:-moz-linear-gradient(top,#444444,#000000) !important;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#444444),to(#000000)) !important;
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#444444,endColorStr=#000000) !important;
+}
+#tss_paging{
+	background: rgba(0,0,0,0.5);
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	
+	-moz-box-shadow			:0 0 2px #fff;
+	-webkit-box-shadow	:0 0 2px #fff;
+	box-shadow					:0 0 2px #fff;
+}
+
+/* MENU */
+.boxed_menu a, .profile_mainmenu a:visited{
+	text-shadow: 1px 1px 1px #fff;
+}
+.boxed_menu a:hover,
+.boxed_menu a.actived{
+	background:#C52002;	
+	background-image:-moz-linear-gradient(top,#E33802,#A80802);
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#E33802),to(#A80802));
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#E33802,endColorStr=#A80802);
+	
+	color:#ffffff;
+	text-decoration:none;
+	text-shadow: 1px 1px 1px #000;
+}
+
+/* TITLE */
+.twitter_holder{
+	text-shadow: 1px 1px 1px #000;
+}
+.twtr-doc p{
+	text-shadow: 1px 1px 1px #fff;
+}
+.boxtitle {
+  background-image:-moz-linear-gradient(top,#E33802,#A80802);
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#E33802),to(#A80802));
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#E33802,endColorStr=#A80802);
+	text-shadow:1px 1px 1px #000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+#gallery_holder{
+	background-image:-moz-linear-gradient(top,#111111,#222222);
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#111111),to(#222222));
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#111111,endColorStr=#222222);
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+#gallery_holder{
+	text-shadow:1px 1px 1px #000;
+}
+#gallery_holder img{
+	background:rgba(0,0,0,0.5);
+	padding:4px;
+	border:1px solid #222;
+	
+	-moz-box-shadow			:0 0 4px #000;
+	-webkit-box-shadow	:0 0 4px #000;
+	box-shadow					:0 0 4px #000;
+}
+#gallery_thumbnails img.actived{
+	-moz-box-shadow			:0 0 4px #000;
+	-webkit-box-shadow	:0 0 4px #000;
+	box-shadow					:0 0 4px #000;
+}
+#gallery_wait{
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	text-shadow:1px 1px 1px #000;
+	background-image:-moz-linear-gradient(top,#111111,#222222);
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#111111),to(#222222));
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#111111,endColorStr=#222222);
+}

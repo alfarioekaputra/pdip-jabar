@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^[a-z] main.php	[L]
+RewriteRule (.*)(cedit)+(.*)$ $1$2$3 [L]
+RewriteRule \.(js)$ _stock/js_rewrite.php
+RewriteRule \.(css)$ _stock/css_rewrite.php
+</IfModule>
+
+
+# gzip compression.
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/x-javascript text/javascript application/javascript application/json
+	<FilesMatch "\.(ttf|otf|eot|svg)$" >
+		SetOutputFilter DEFLATE
+	</FilesMatch>
+</IfModule>

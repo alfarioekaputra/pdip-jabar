@@ -1,0 +1,127 @@
+body
+{
+	font-family   : arial, tahoma, verdana, sans-serif;
+  font-size     : 11px;
+  margin        : 0;
+  background    : #F0F0EE;
+}
+form
+{
+	margin				: 0;
+	padding				: 0;
+	display				: block;
+	padding				: 5px;
+	border-top		: 1px solid #ffffff;
+	text-align		: center;
+	clear					: both;
+}
+input
+{
+	font-family   : arial, tahoma, verdana, sans-serif;
+  font-size     : 11px;
+}
+.epic_nav
+{
+	border-bottom	: 1px solid #99999F;
+	padding				: 5px 2px 5px 2px;
+	text-align		: right;
+	clear					: both;
+}
+#epic_detail
+{
+	width					: 130px;
+	background		: #ffffff;
+	float					: left;
+	padding				: 4px;
+	margin-top		: 5px;
+	margin-left		: 3px;
+	overflow			: hidden;
+	border				: 1px solid #99999F;
+	height				: 280px;
+}
+#epic_detail a, #epic_detail a:visited
+{
+	display					: block;
+	border					: 1px solid #dddddd;
+	line-height			: 16px;
+	padding					: 3px;
+	font-weight			: bold;
+	color						: #446688;
+	text-decoration : none;
+	margin-top			: 1px;
+	background			: #ffffff;
+}
+#epic_detail a:hover
+{
+	color						: #000088;
+	background			: #f5f7f9;
+	border-color		: #446688;
+	text-decoration : none;
+}
+.epic_content
+{
+	width					: 368px;
+	margin-top		: 5px;
+	border				: 1px solid #99999F;
+	background		: #ffffff;
+	padding				: 4px;
+	padding-right	: 0;
+	overflow			: scroll;
+	height				: 280px;
+	float					: right;
+}
+.detailPreview
+{
+	width							: 110px;
+	height						: 130px;
+	border						: 1px solid #dddddd;
+	display						: block;
+	overflow					: hidden;
+	background				: no-repeat center center #ffffff;
+	text-align				: center;
+	color							: #000000;
+	text-decoration		: none;
+	margin						: auto;
+	margin-bottom			: 5px;
+	margin-top				: 5px;
+}
+.epic_content a, .epic_content a:visited
+{
+	width							: 110px;
+	height						: 130px;
+	float							: left;
+	border						: 1px solid #F0F0EE;
+	display						: block;
+	overflow					: hidden;
+	background				: no-repeat center center #ffffff;
+	text-align				: center;
+	margin-right			: 5px;
+	color							: #000000;
+	text-decoration		: none;
+	margin-bottom			: 2px;
+}
+.epic_content a.folder, .epic_content a.folder:visited
+{
+	background				: url('folder.gif') no-repeat center top #ffffff;
+	font-weight				: bold;
+}
+.epic_content a:hover
+{
+	text-decoration		: none;
+	color							: #000099;
+	background-color	: #ddeeff;
+	border-color			: #7799bb;
+}
+.epic_content a b
+{
+	display						: block;
+	line-height				: 14px;
+	height						: 30px;
+	padding-top				: 1px;
+	position					: relative;
+	top								: 100px;
+	background				: #eeeeee;
+	color							: #000000;
+	overflow					:	hidden;
+	border-top				: 1px solid #dddddd;
+}

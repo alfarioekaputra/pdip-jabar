@@ -1,0 +1,24 @@
+body
+{
+	font-family   : verdana,tahoma,arial,sans-serif;
+  font-size     : 11px;
+  margin        : 5px;
+  background		: #fff;
+  line-height   : 14px;
+}
+html
+{
+	_overflow-y: scroll
+}
+img:-moz-broken
+{
+	-moz-force-broken-image-icon : 1;
+	width : 24px;
+	height : 24px;
+}
+blockquote{
+	border-left:4px solid #ccc;
+	padding:5px;
+	margin:5px;
+	margin-left:20px;
+}
