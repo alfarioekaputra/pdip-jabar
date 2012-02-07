@@ -150,8 +150,11 @@ function do_save(){
       "'{$_POST['keyword']}',".
       "'{$_POST['deskripsi']}',".
       "'{$_POST['isi']}',".
-      "'{$imgtxt}','{$_POST['judulgbr']}'".
-    ",'{$_SESSION['loginid']}')";
+      "'{$imgtxt}','{$_POST['judulgbr']}',".
+      "'{$_SESSION['loginid']}',".
+      "'',".
+      "'0')";
+      echo $sql;
   }
   else{
     $sql="UPDATE `"._TABLE_NAME."` SET ".
@@ -221,7 +224,7 @@ function do_edit(){
 ?>
 <div class="row">
   <div class="label">
-    Flag
+    Headline News
   </div>
   <div class="val">
     <input type="checkbox" name="flag" value="1" />

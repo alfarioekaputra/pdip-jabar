@@ -2,7 +2,7 @@
 # Security
 if (!defined('_IN_PHP')){ header('location:/'); exit(); }
 
-$content = $db->sql("SELECT * FROM `"._p."_berita` WHERE `id`='{$id}'");
+$content = $db->sql("SELECT * FROM `pdip_berita` WHERE `id`='{$id}'");
 if (!$content){ header('location:'._net.'/berita/'); exit(); }
 $kategori= $db->sql("SELECT * FROM `"._p."_berita_cat` WHERE `kode`='{$content['cat']}'");
 if (!$kategori){ header('location:'._net.'/berita/'); exit(); }
@@ -37,7 +37,9 @@ for ($i=0;$i<count($kwd);$i++){
     $keywd[]=$key;
   }
 }
-	
+$dilihat = "UPDATE `"._p."_berita` set `dilihat`= (`dilihat`+1) WHERE `id` = '{$id}'"; //counter berita
+$db->query($dilihat);
+//echo "<script>alert('$db->query($dilihat)');</script>";
 ?>
 <div class="tph_left" style="width:250px">
 <?php
