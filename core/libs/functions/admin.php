@@ -72,6 +72,19 @@ function make_head($title,$tools){
   echo '</div></div>';
 }
 
+# Calendar Builder
+function make_calendar($tagName,$firstval){
+  echo '<div id="'.$tagName.'_div" style="line-height:14px">';
+  echo '<img src="about:blank" alt="" class="hideObj" onerror="calender_write('.
+       "'{$tagName}_div','{$tagName}',";
+        if ($firstval)
+          echo str_replace('-',',',$firstval);
+        else
+          echo '0,0,0';
+  echo ",'input1','width:80px;');".
+       '" width="0" height="0" /></div>';
+}
+
 # Header List Sorting
 function make_sorthead($title,$sortby,$addurl=""){
   $sorted=$_SESSION['sort'][_TABLE_NAME];

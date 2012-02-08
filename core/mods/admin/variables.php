@@ -17,8 +17,9 @@ $_SERVER['MAIN_MENU']=array(
 	array(    8,    'cat_video',         	'Kategori Video',      		4),
 	
 /*  array(    9,    'agenda',             'Agenda',               	5),*/
-  array(   9,    'banner',             'Banner',                 5),  
-  array(   10,    'user',               'User Admin',      				5)
+  array(   9,    'banner',             'Banner',                 5),
+  array(   10,    'statistik',          'Statistik',               5),  
+  array(   11,    'user',               'User Admin',      				6)
 );
 
 for ($i=0;$i<count($_SERVER['MAIN_MENU']);$i++){

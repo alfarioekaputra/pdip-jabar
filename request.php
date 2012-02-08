@@ -105,4 +105,13 @@ if (!defined('_IN_PHP')){ header("HTTP/1.1 403 Forbidden"); exit(); }
     echo $___FLUSH;
     $_TPL->end();
     # (c)XAXMXAXRXUXLXLXZX
+    
+    # statistik
+    if (!$_SESSION['is_first_time']){
+    	$_SESSION['is_first_time']=1;
+    	$db->query("INSERT INTO `"._dbp."_statistik` VALUES (NULL,'".date("Y-m-d")."','{$_SERVER['REMOTE_ADDR']}','".time()."',1)");
+    }
+    else{
+    	$db->query("INSERT INTO `"._dbp."_statistik` VALUES (NULL,'".date("Y-m-d")."','{$_SERVER['REMOTE_ADDR']}','".time()."',0)");
+    }
 ?>

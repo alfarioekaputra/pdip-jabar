@@ -2,7 +2,7 @@
 # Security
 if (!defined('_IN_PHP')){ header('location:/'); exit(); }
 
-$content = $db->sql("SELECT * FROM `pdip_berita` WHERE `id`='{$id}'");
+$content = $db->sql("SELECT * FROM `"._p."_berita` WHERE `id`='{$id}'");
 if (!$content){ header('location:'._net.'/berita/'); exit(); }
 $kategori= $db->sql("SELECT * FROM `"._p."_berita_cat` WHERE `kode`='{$content['cat']}'");
 if (!$kategori){ header('location:'._net.'/berita/'); exit(); }
@@ -17,7 +17,7 @@ $content['width'] = $orient[$kategori['portrait']][0];
 $content['height']= $orient[$kategori['portrait']][1];
 $content['swidth'] = $orient_small[$kategori['portrait']][0];
 $content['sheight']= $orient_small[$kategori['portrait']][1];
-
+echo $content['dilihat'];
 switch($kategori['kode']){
 	case 'nasional':
 	case 'jabar':
@@ -124,6 +124,10 @@ echo '<div style="padding-bottom:5px">'.getbanner(234,60).'</div>';
 	echo htmlspecialchars($user['fullname']);
 	echo ' <em style="color:#666">sumber</em> '.htmlspecialchars($content['sumber']);
 	echo ' <em style="color:#666">pada</em> '.formatTanggal($content['waktu']);
+	echo '</span>';
+
+	echo '<span class="newsview_info_label">Dibaca :</span><span class="newsview_info_val">';
+	echo htmlspecialchars($content['dilihat'])."&nbsp;Kali";
 	echo '</span>';
 	
 	$berita_uri  = '/berita/print/'.soefriendly($content['judul'],id2base($content['id']).".html",30);
